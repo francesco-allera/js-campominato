@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Campo Minato</title>
+</head>
+<body>
+
+    <!-- app -->
+    <div id="app">
+        <h1>
+            campo minato
+        </h1>
+
+        <p>
+            Ci sono <span id="bombs"></span> numeri-bomba.
+            <br>
+            Inserisci diversi numeri per riuscire ad evitare i numeri-bomba.
+            <br>
+            Cerca di arrivare fino alla fine senza esplodere per vincere!
+        </p>
+
+        <!-- difficulties -->
+        <div class="difficulties">
+            <h2>
+                Scegli una difficoltà:
+            </h2>
+
+            <!-- 3 cards -->
+            <ul class="difficulties">
+                <!-- easy -->
+                <li>
+                    <label class="card" for="easy">
+                        <h3>
+                            facile
+                        </h3>
+
+                        <span id="easy-bombs"></span> numeri
+
+                        <input type="radio" name="difficulty" id="easy">
+                        <span class="bg-card"></span>
+                    </label>
+                </li>
+                <!-- /easy -->
+
+                <!-- medium -->
+                <li>
+                    <label class="card" for="medium">
+                        <h3>
+                            medio
+                        </h3>
+
+                        <span id="medium-bombs"></span> numeri
+
+                        <input type="radio" name="difficulty" id="medium">
+                        <span class="bg-card"></span>
+                    </label>
+                </li>
+                <!-- /medium -->
+
+                <!-- hard -->
+                <li>
+                    <label class="card" for="hard">
+                        <h3>
+                            difficile
+                        </h3>
+
+                        <span id="hard-bombs"></span> numeri
+
+                        <input type="radio" name="difficulty" id="hard">
+                        <span class="bg-card"></span>
+                    </label>
+                </li>
+                <!-- /hard -->
+            </ul>
+            <!-- /cards -->
+        </div>
+        <!-- /difficulties -->
+
+        <div class="btn-start">
+            <button id="starter">
+                Clicca per giocare!
+            </button>
+        </div>
+
+        <h4>
+            miglior punteggio: <span id="points"></span>
+        </h4>
+
+        <div id="result"></div>
+    </div>
+    <!-- /app -->
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
